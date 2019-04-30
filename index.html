@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="display">
+                <p class="display__top"></p>
+                <p class="display__bottom">0</p>
+            </div>
+            <div class="buttonContainer">
+                <div class="row">
+                    <button class="row__button" onClick="clearEntry()">CE</button>
+                    <button class="row__button clearAll" onClick="clearAll()">C</button>
+                    <button class="row__button" onClick="backspace()"><i class="fas fa-backspace"></i></button>
+                    <button class="row__button operator" value="/">/</button>
+                </div>
+                <div class="row">
+                    <button class="row__button row__number" value="7">7</button>
+                    <button class="row__button row__number" value="8">8</button>
+                    <button class="row__button row__number" value="9">9</button>
+                    <button class="row__button operator" value="*">*</button>
+                </div>
+                <div class="row">
+                    <button class="row__button row__number" value="4">4</button>
+                    <button class="row__button row__number" value="5">5</button>
+                    <button class="row__button row__number" value="6">6</button>
+                    <button class="row__button operator" value="-">-</button>
+                </div>
+                <div class="row">
+                    <button class="row__button row__number" value="1">1</button>
+                    <button class="row__button row__number" value="2">2</button>
+                    <button class="row__button row__number" value="3">3</button>
+                    <button class="row__button operator" value="+">+</button>
+                </div> 
+                <div class="row">
+                    <button class="row__button" onClick="makeNegative()">+/-</button>
+                    <button class="row__button row__number" value="0">0</button>
+                    <button class="row__button row__number" value=".">.</button>
+                    <button class="row__button equals" onClick="equals()">=</button>
+                </div> 
+            </div>
+        </div>
+        <div class="history">
+            <h2 class="history__header">History</h2>
+            <div class="history__section"></div>
+            <button class="history__button" onClick="clearHistory()"><i class="fas fa-trash-alt"></i></button>
+        </div>
+    </div>
+    
+</body>
+<script src="scripts.js"></script>
+</html>
